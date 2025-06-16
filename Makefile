@@ -1,5 +1,5 @@
 PROJ ?= 
-VICUNA_MAKEFILE = /home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/guide/Makefile
+VICUNA_MAKEFILE = $(abspath guide/Makefile)
 
 .PHONY: create-vicuna-test-proj check_proj_dir
 defualt: create-vicuna-test-proj
@@ -17,3 +17,8 @@ create-vicuna-test-proj: check_proj_dir
 	@echo "Vicuna test project created in $(PROJ)."
 	@echo "Opening the project in VS Code..."
 	code $(PROJ) || echo "VS Code is not installed or not found in PATH. Please open the project manually."
+
+tmp_debug:
+	@echo "Running temporary debug command..."
+	@echo "This is a placeholder for debugging purposes."
+	@echo "VICUNA_MAKEFILE : $(VICUNA_MAKEFILE)"
