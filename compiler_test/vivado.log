@@ -1,0 +1,493 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Jun 14 23:02:55 2025
+# Process ID: 14710
+# Current directory: /home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test
+# Command line: vivado /home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/synth/vicuna_demo/vicuna_demo.xpr
+# Log file: /home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/vivado.log
+# Journal file: /home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/vivado.jou
+# Running On        :nikhil
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04.2 LTS
+# Processor Detail  :12th Gen Intel(R) Core(TM) i5-1235U
+# CPU Frequency     :3737.383 MHz
+# CPU Physical cores:10
+# CPU Logical cores :12
+# Host memory       :16484 MB
+# Swap memory       :4294 MB
+# Total Virtual     :20779 MB
+# Available Virtual :17073 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/synth/vicuna_demo/vicuna_demo.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/synth/vicuna_demo/vicuna_demo.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 7855.527 ; gain = 394.430 ; free physical = 6484 ; free virtual = 15343
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'demo_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/synth/vicuna_demo/vicuna_demo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'demo_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/synth/vicuna_demo/vicuna_demo.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj demo_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/demo/rtl/demo_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demo_top
+INFO: [VRFC 10-311] analyzing module hwreg_iface
+INFO: [VRFC 10-311] analyzing module uart_iface
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_branch_predict.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_branch_predict
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_compressed_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_cs_registers.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_cs_registers
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_csr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_csr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_dummy_instr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_dummy_instr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_ex_block.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_ex_block
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_fetch_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_fetch_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_icache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_icache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_id_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_id_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_if_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_if_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_load_store_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_load_store_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_lockstep.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_lockstep
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_multdiv_fast.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_multdiv_fast
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_multdiv_slow.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_multdiv_slow
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_pmp.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_pmp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_prefetch_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_prefetch_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_register_file_ff.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_register_file_ff
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_register_file_fpga.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_register_file_fpga
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_ram_1p_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_wb_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_wb_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_lfsr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prim_lfsr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_28_22_dec.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prim_secded_28_22_dec
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_28_22_enc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prim_secded_28_22_enc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_39_32_dec.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prim_secded_39_32_dec
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_39_32_enc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prim_secded_39_32_enc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/demo/rtl/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/demo/rtl/uart_rx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/demo/rtl/uart_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_cache
+INFO: [VRFC 10-311] analyzing module vproc_cache_way
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/synth/vproc_config.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_dispatcher.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_dispatcher
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_elem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_elem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_lsu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_lsu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_mul.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_mul
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_mul_block.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_mul_block
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_pending_wr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_pending_wr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_pipeline.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_pipeline
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_pipeline_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_pipeline_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_queue.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_queue
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_result.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_result
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_sld.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_sld
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_unit_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_unit_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_unit_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_unit_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_vreg_wr_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_vreg_wr_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_vregfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_vregfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_vregpack.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_vregpack
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_vregunpack.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vproc_vregunpack
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/rtl/vproc_xif.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nikhil/vicuna-build/vicuna/demo/rtl/demo_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demo_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/synth/vicuna_demo/vicuna_demo.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -d MAIN_CORE_IBEX= -generic_top RAM_FPATH=/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem -generic_top DIFF_CLK=0 -generic_top SYSCLK_PER=10.0 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot demo_tb_behav xil_defaultlib.demo_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -d MAIN_CORE_IBEX= -generic_top RAM_FPATH=/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem -generic_top DIFF_CLK=0 -generic_top SYSCLK_PER=10.0 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot demo_tb_behav xil_defaultlib.demo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3532] module 'glbl' does not have a parameter named 'RAM_FPATH' to override [/home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/synth/vicuna_demo/vicuna_demo.sim/sim_1/behav/xsim/glbl.v:6]
+WARNING: [VRFC 10-9466] unpacked array widths (2 versus 1) do not match [/home/nikhil/vicuna-build/vicuna/rtl/vproc_core.sv:921]
+WARNING: [VRFC 10-9466] unpacked array widths (2 versus 1) do not match [/home/nikhil/vicuna-build/vicuna/rtl/vproc_core.sv:922]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/PLLE2_BASE.v" Line 25. Module PLLE2_BASE(CLKFBOUT_MULT=10,CLKIN1_PERIOD=10.0,CLKOUT0_DIVIDE=20) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/PLLE2_ADV.v" Line 49. Module PLLE2_ADV(CLKFBOUT_MULT=10,CLKIN1_PERIOD=10.0,CLKIN2_PERIOD=10.0,CLKOUT0_DIVIDE=20) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/RAM32M.v" Line 30. Module RAM32M has a timescale but at least one module in design doesn't have timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4100' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [VRFC 10-2649] an enum variable may only be assigned the same enum typed variable or one of its values [/home/nikhil/vicuna-build/vicuna/rtl/vproc_core.sv:497]
+WARNING: [VRFC 10-2649] an enum variable may only be assigned the same enum typed variable or one of its values [/home/nikhil/vicuna-build/vicuna/rtl/vproc_unit_mux.sv:240]
+WARNING: [VRFC 10-2649] an enum variable may only be assigned the same enum typed variable or one of its values [/home/nikhil/vicuna-build/vicuna/rtl/vproc_core.sv:315]
+WARNING: [VRFC 10-2649] an enum variable may only be assigned the same enum typed variable or one of its values [/home/nikhil/vicuna-build/vicuna/rtl/vproc_core.sv:316]
+WARNING: [VRFC 10-2649] an enum variable may only be assigned the same enum typed variable or one of its values [/home/nikhil/vicuna-build/vicuna/rtl/vproc_core.sv:317]
+WARNING: [VRFC 10-2649] an enum variable may only be assigned the same enum typed variable or one of its values [/home/nikhil/vicuna-build/vicuna/rtl/vproc_core.sv:321]
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.vproc_pkg
+Compiling package xil_defaultlib.ibex_pkg
+Compiling package xil_defaultlib.prim_ram_1p_pkg
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=10,CLKIN...
+Compiling module unisims_ver.PLLE2_BASE(CLKFBOUT_MULT=10,CLKI...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.vproc_xif_default
+Compiling module xil_defaultlib.prim_clock_gating
+Compiling module xil_defaultlib.ibex_fetch_fifo(NUM_REQS=32'b010...
+Compiling module xil_defaultlib.ibex_prefetch_buffer_default
+Compiling module xil_defaultlib.ibex_compressed_decoder
+Compiling module xil_defaultlib.ibex_if_stage(DmHaltAddr=32'b0,D...
+Compiling module xil_defaultlib.ibex_decoder(RV32E=1'b0,RV32M=RV...
+Compiling module xil_defaultlib.ibex_controller(WritebackStage=1...
+Compiling module xil_defaultlib.ibex_id_stage(RV32E=1'b0,RV32M=R...
+Compiling module xil_defaultlib.ibex_alu(RV32B=RV32BNone_ibex_pk...
+Compiling module xil_defaultlib.ibex_multdiv_fast(RV32M=RV32MFas...
+Compiling module xil_defaultlib.ibex_ex_block(RV32M=RV32MFast_ib...
+Compiling module xil_defaultlib.ibex_load_store_unit
+Compiling module xil_defaultlib.ibex_wb_stage_default
+Compiling module xil_defaultlib.ibex_csr(Width=32'b0110)
+Compiling module xil_defaultlib.ibex_csr_default
+Compiling module xil_defaultlib.ibex_csr(Width=32'b010010)
+Compiling module xil_defaultlib.ibex_csr(Width=32'b0100000)
+Compiling module xil_defaultlib.ibex_csr(Width=32'b011)
+Compiling module xil_defaultlib.ibex_counter(CounterWidth=64)
+Compiling module xil_defaultlib.ibex_cs_registers(DbgTriggerEn=1...
+Compiling module xil_defaultlib.ibex_core(PMPGranularity=32'b0,P...
+Compiling module xil_defaultlib.ibex_register_file_ff(RV32E=1'b0...
+Compiling module xil_defaultlib.ibex_top(RV32M=RV32MFast_ibex_pk...
+Compiling module xil_defaultlib.vproc_decoder(CFG_VL_W=32'b0111,...
+Compiling module xil_defaultlib.vproc_queue(WIDTH=32'b01111001,D...
+Compiling module xil_defaultlib.vproc_pending_wr
+Compiling module xil_defaultlib.vproc_dispatcher(PIPE_CNT=32'b01...
+Compiling module unisims_ver.RAM32M
+Compiling module xil_defaultlib.vproc_vregfile(VREG_TYPE=VREG_XL...
+Compiling module xil_defaultlib.vproc_vregunpack(MAX_VPORT_W=32'...
+Compiling module xil_defaultlib.vproc_queue(WIDTH=32'b0101010,DE...
+Compiling module xil_defaultlib.vproc_queue(WIDTH=32'b01010,DEPT...
+Compiling module xil_defaultlib.vproc_lsu(VMEM_W=32'b0100000,CTR...
+Compiling module xil_defaultlib.vproc_unit_wrapper(UNIT=UNIT_LSU...
+Compiling module xil_defaultlib.vproc_queue(WIDTH=32'b011,DEPTH=...
+Compiling module xil_defaultlib.vproc_unit_mux(UNITS=5'b01,XIF_I...
+Compiling module xil_defaultlib.vproc_vregpack(VPORT_W=32'b01000...
+Compiling module xil_defaultlib.vproc_pipeline(VREG_W=32'b010000...
+Compiling module xil_defaultlib.vproc_pipeline_wrapper(VREG_W=32...
+Compiling module xil_defaultlib.vproc_vregunpack(MAX_VPORT_W=32'...
+Compiling module xil_defaultlib.vproc_xif(X_MEM_WIDTH=32'b010000...
+Compiling module xil_defaultlib.vproc_alu(ALU_OP_W=32'b01000000,...
+Compiling module xil_defaultlib.vproc_unit_wrapper(UNIT=UNIT_ALU...
+Compiling module xil_defaultlib.vproc_elem(VREG_W=32'b010000000,...
+Compiling module xil_defaultlib.vproc_unit_wrapper(UNIT=UNIT_ELE...
+Compiling module xil_defaultlib.vproc_unit_mux(UNITS=5'b10010,XI...
+Compiling module xil_defaultlib.vproc_vregpack(VPORT_W=32'b01000...
+Compiling module xil_defaultlib.vproc_pipeline(VREG_W=32'b010000...
+Compiling module xil_defaultlib.vproc_pipeline_wrapper(VREG_W=32...
+Compiling module xil_defaultlib.vproc_vregunpack(MAX_VPORT_W=32'...
+Compiling module unisims_ver.DSP48E1(CARRYINREG=0,CARRYINSELR...
+Compiling module xil_defaultlib.vproc_mul_block(MUL_TYPE=MUL_XLN...
+Compiling module xil_defaultlib.vproc_mul(MUL_OP_W=32'b01000000,...
+Compiling module xil_defaultlib.vproc_unit_wrapper(UNIT=UNIT_MUL...
+Compiling module xil_defaultlib.vproc_sld(SLD_OP_W=32'b01000000,...
+Compiling module xil_defaultlib.vproc_unit_wrapper(UNIT=UNIT_SLD...
+Compiling module xil_defaultlib.vproc_unit_mux(UNITS=5'b01100,XI...
+Compiling module xil_defaultlib.vproc_vregpack(VPORT_W=32'b01000...
+Compiling module xil_defaultlib.vproc_pipeline(VREG_W=32'b010000...
+Compiling module xil_defaultlib.vproc_pipeline_wrapper(VREG_W=32...
+Compiling module xil_defaultlib.vproc_vreg_wr_mux(VREG_W=32'b010...
+Compiling module xil_defaultlib.vproc_result(XIF_ID_W=32'b011)
+Compiling module xil_defaultlib.vproc_core(XIF_ID_W=32'b011,XIF_...
+Compiling module xil_defaultlib.vproc_top(VREG_TYPE=VREG_XLNX_RA...
+Compiling module xil_defaultlib.ram32(SIZE=32'b01000000000000000...
+Compiling module xil_defaultlib.uart_tx(BAUD_RATE=32'b0111000010...
+Compiling module xil_defaultlib.uart_rx(BAUD_RATE=32'b0111000010...
+Compiling module xil_defaultlib.uart_iface(CLK_FREQ=32'b01011111...
+Compiling module xil_defaultlib.hwreg_iface(CLK_FREQ=32'b0101111...
+Compiling module xil_defaultlib.demo_top(RAM_FPATH="/home/nikhil...
+Compiling module xil_defaultlib.demo_tb(RAM_FPATH="/home/nikhil/...
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot demo_tb_behav
+execute_script: Time (s): cpu = 00:00:39 ; elapsed = 00:00:12 . Memory (MB): peak = 7981.840 ; gain = 0.000 ; free physical = 6315 ; free virtual = 15175
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/synth/vicuna_demo/vicuna_demo.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "demo_tb_behav -key {Behavioral:sim_1:Functional:demo_tb} -tclbatch {demo_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source demo_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File /home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem referenced on /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_top.sv at line 784 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+
+Time: 655 ns Started: 655 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:290
+Error: 655000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:290) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrLSBsKnown
+Time: 655 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 290
+              665000: Illegal instruction (hart 0) at PC 0x00000080: 0xxxxxxxxx
+
+Time: 675 ns Started: 675 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:286
+Error: 675000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:286) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrValidKnown
+Time: 675 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 286
+
+Time: 695 ns Started: 695 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:286
+Error: 695000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:286) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrValidKnown
+Time: 695 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 286
+
+Time: 715 ns Started: 715 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:290
+Error: 715000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:290) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrLSBsKnown
+Time: 715 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 290
+              725000: Illegal instruction (hart 0) at PC 0x00000000: 0xxxxxxxxx
+
+Time: 735 ns Started: 735 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:286
+Error: 735000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:286) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrValidKnown
+Time: 735 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 286
+
+Time: 755 ns Started: 755 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:286
+Error: 755000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:286) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrValidKnown
+Time: 755 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 286
+
+Time: 775 ns Started: 775 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:290
+Error: 775000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:290) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrLSBsKnown
+Time: 775 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 290
+              785000: Illegal instruction (hart 0) at PC 0x00000000: 0xxxxxxxxx
+
+Time: 795 ns Started: 795 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:286
+Error: 795000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:286) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrValidKnown
+Time: 795 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 286
+
+Time: 815 ns Started: 815 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:286
+Error: 815000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:286) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrValidKnown
+Time: 815 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 286
+
+Time: 835 ns Started: 835 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:290
+Error: 835000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:290) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrLSBsKnown
+Time: 835 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 290
+              845000: Illegal instruction (hart 0) at PC 0x00000000: 0xxxxxxxxx
+
+Time: 855 ns Started: 855 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:286
+Error: 855000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:286) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrValidKnown
+Time: 855 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 286
+
+Time: 875 ns Started: 875 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:286
+Error: 875000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:286) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrValidKnown
+Time: 875 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 286
+
+Time: 895 ns Started: 895 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:290
+Error: 895000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:290) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrLSBsKnown
+Time: 895 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 290
+              905000: Illegal instruction (hart 0) at PC 0x00000000: 0xxxxxxxxx
+
+Time: 915 ns Started: 915 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:286
+Error: 915000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:286) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrValidKnown
+Time: 915 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 286
+
+Time: 935 ns Started: 935 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:286
+Error: 935000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:286) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrValidKnown
+Time: 935 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 286
+
+Time: 955 ns Started: 955 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:290
+Error: 955000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:290) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrLSBsKnown
+Time: 955 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 290
+              965000: Illegal instruction (hart 0) at PC 0x00000000: 0xxxxxxxxx
+
+Time: 975 ns Started: 975 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:286
+Error: 975000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:286) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrValidKnown
+Time: 975 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 286
+
+Time: 995 ns Started: 995 ns Scope: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line:286
+Error: 995000: (/home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv:286) [demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i] [ASSERT FAILED] IbexInstrValidKnown
+Time: 995 ns  Iteration: 5  Process: /demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i//demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0)/soc/vproc/u_core/u_ibex_core/if_stage_i/compressed_decoder_i  Scope: demo_tb(RAM_FPATH="/home/nikhil/vicuna-build/vicuna/demo/~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem",SYSCLK_PER=10.0).soc.vproc.u_core.u_ibex_core.if_stage_i.compressed_decoder_i  File: /home/nikhil/vicuna-build/vicuna/ibex/rtl/ibex_compressed_decoder.sv Line: 286
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'demo_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:44 ; elapsed = 00:00:16 . Memory (MB): peak = 8034.773 ; gain = 52.934 ; free physical = 6306 ; free virtual = 15204
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 14 23:05:16 2025...

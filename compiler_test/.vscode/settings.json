@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "*.cshtml": "razor",
+    "riscv_vector.h": "c"
+  }
+}

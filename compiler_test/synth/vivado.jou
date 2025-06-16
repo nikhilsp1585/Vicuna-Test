@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Jun 14 23:08:56 2025
+# Process ID: 16186
+# Current directory: /home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/synth
+# Command line: vivado -mode batch -source /home/nikhil/vicuna-build/vicuna/demo/gen_demo.tcl -tclargs /home/nikhil/vicuna-build/vicuna/demo//../ /home/nikhil/vicuna-build/vicuna/ibex /home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/synth/vproc_config.sv xc7a200tsbg484-1 /home/nikhil/vicuna-build/vicuna/demo/nexysvideo.xdc /home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem 0 10.0
+# Log file: /home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/synth/vivado.log
+# Journal file: /home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/synth/vivado.jou
+# Running On        :nikhil
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04.2 LTS
+# Processor Detail  :12th Gen Intel(R) Core(TM) i5-1235U
+# CPU Frequency     :2584.780 MHz
+# CPU Physical cores:10
+# CPU Logical cores :12
+# Host memory       :16484 MB
+# Swap memory       :4294 MB
+# Total Virtual     :20779 MB
+# Available Virtual :17067 MB
+#-----------------------------------------------------------
+source /home/nikhil/vicuna-build/vicuna/demo/gen_demo.tcl

@@ -1,0 +1,12 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -d MAIN_CORE_IBEX= -generic_top RAM_FPATH=/home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/compiler_test.vmem -generic_top DIFF_CLK=0 -generic_top SYSCLK_PER=10.0 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot demo_tb_behav xil_defaultlib.demo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3532] module 'glbl' does not have a parameter named 'RAM_FPATH' to override [/home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/synth/vicuna_demo/vicuna_demo.sim/sim_1/behav/xsim/glbl.v:6]
+WARNING: [VRFC 10-9466] unpacked array widths (2 versus 1) do not match [/home/nikhil/vicuna-build/vicuna/rtl/vproc_core.sv:921]
+WARNING: [VRFC 10-9466] unpacked array widths (2 versus 1) do not match [/home/nikhil/vicuna-build/vicuna/rtl/vproc_core.sv:922]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

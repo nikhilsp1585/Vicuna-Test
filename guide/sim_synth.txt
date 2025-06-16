@@ -1,0 +1,79 @@
+***** To generate *.elf *.o and *.vmem from C program *****
+-> make -f path/to/vicuna/sw/Makefile PROG=c_file_path OBJ=obj_file_path
+
+***** To Simulate using Verilator  *****
+-> first echo "*.vmem" > *.txt
+-> then make -f path/to/vicuna/sim/Makefile PROG_PATHS=*.txt 
+
+    We can configure various parameter of vicuna while simulating like, (by giving extra flags to above command)
+    VPROC_CONFIG=dual (2 pipelines see docs for more https://vicuna.readthedocs.io/en/latest/01_user/simulation.html)
+    VREG_W = 512
+
+    see configuration section of vicuna user guide for other configuration options
+
+***** Simulation Options *****
+
+By default simulation model is saved to a temp directory (created using mktemp)
+a model is generated for each simulation run
+
+Instead this we may want to specify a directory for saving simulation model if the RTL code
+has not changed then use, 
+
+PROJ_DIR = /desired/path/to/simulation/model 
+
+We may also specify the desired main core with CORE.
+- modified version of Ibex (default)
+- CV32E40x 
+are supported
+
+CORE=cv32e40x 
+
+***** Simulating with Vivado or Questasim *****
+
+above instructions us Verilator for simulation, most of them equally apply to other 
+simulation tools..
+The desired simulation tool can be selected by specifying it as target for the make 
+command.
+
+Allowed values are 
+- verilator (the default)
+- vivado 
+- Questasim
+
+make -f /path/to/vicuna/sim/Makefile vivado PROG_PATHS=progs.txt ...
+
+above command simulate using vivado's xsim.
+use makefile provided in this directory to simulate using vivado 
+ex. make PROGS_PATH=progs.txt PROJ_DIR=/home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/compiler_test/sims
+
+
+***** Synthesis using Vivado *****
+Go to /vicuna/demo dir and run
+
+make RAM_FILE=test.vmem BOARD=nexysvideo VPROC_CONFIG=dual VREG_W=512 etc confs
+
+Supported Boards:
+nexysvideo: Digilent’s Nexys Video
+genesys2: Digilent’s Genesys 2
+nexysa7: Digilent’s Nexys A7
+
+**** TO ADD OUR OWN BOARD
+
+# Clock Signal
+set_property -dict { PACKAGE_PIN <...> IOSTANDARD <...> } [get_ports { sys_clk_pi }];
+create_clock -period <...> -name sysclk [get_ports sys_clk_pi]
+set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets sys_clk_pi]
+## Buttons
+set_property -dict { PACKAGE_PIN <...> IOSTANDARD <...> } [get_ports { sys_rst_ni }]+
+ ##UART
+set_property -dict { PACKAGE_PIN <...> IOSTANDARD <...> } [get_ports { uart_tx_o }];
+set_property -dict { PACKAGE_PIN <...> IOSTANDARD <...> } [get_ports { uart_rx_i }];
+## Configuration options
+set_property CONFIG_VOLTAGE <...> [current_design]
+
+use following 
+• CONSTR: Path to the constraints *.xdc file.
+• PART: The part name of the FPGA (type get_parts in Vivado’s TCL console to get a list of supported part
+names).
+• CLK_PER: The clock period in nanoseconds of the system clock.
+• DIFF_CLK: Set to 1 if the system clock is differential or 0 if it is single-ended.
