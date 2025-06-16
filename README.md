@@ -4,4 +4,4 @@ To create-vicuna-test-project execute following,
 ```
 make PROJ=project_name
 ```
-it will create file in the directory where Makefile resides. Also it copies the Vicuna-Test Makefile to PROJ folder. This Makefile is in ```guide/Makefile```
+it will create vicuna test project in the directory where Makefile resides. Also it copies the Vicuna-Test Makefile to PROJ folder. This Makefile is in ```guide/Makefile```
