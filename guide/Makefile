@@ -2,7 +2,7 @@ FLAGS = -march=rv32imv -mabi=ilp32
 CC = riscv32-unknown-elf-gcc
 AS = riscv32-unknown-elf-as
 
-SRC ?= vector_load.c
+SRC ?= vector_load_asm.c
 SRC_BASENAME = $(basename $(SRC))
 
 OUT ?= $(SRC_BASENAME).o
@@ -11,6 +11,9 @@ RISCV_PATH ?= /opt/riscv32
 VICUNA_PATH ?= ~/vicuna-build/vicuna
 VICUNA_PROJ_PATH ?= ~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/
 PROJ ?=  
+ifneq $(PROJ)
+	FULL_PROJ_DIR = $(FULL_PROJ_DIR)
+endif
 
 CORE ?= ibex
 VPROC_CONFIG ?= triple
@@ -44,6 +47,9 @@ help:
 %.o:%.c
 	$(CC) -v $(FLAGS) -o $(OUT) $(SRC)
 
+%.elf:%.c
+	$(CC) -v $(FLAGS) -o $(ELF) $(SRC)
+
 %.o:%.s
 	$(AS) $(FLAGS) -o $(OUT) $(SRC)
 
@@ -52,7 +58,13 @@ set-src:
 	echo "SRC set to: $$SRC" 
 
 run-spike:
-	spike --isa=rv32imv $(RISCV_PATH)/riscv32-unknown-elf/bin/pk ./$(OUT)
+	spike --isa=rv32imv -d $(RISCV_PATH)/riscv32-unknown-elf/bin/pk ./$(OUT)
+
+run-spike-elf:
+	spike --isa=rv32imv -d $(RISCV_PATH)/riscv32-unknown-elf/bin/pk ./$(ELF)
+
+run-spike-elf-log:
+	spike -l --isa=rv32imv $(RISCV_PATH)/riscv32-unknown-elf/bin/pk ./$(ELF) 2> spike_elf_log.log
 
 dism-obj:
 	riscv32-unknown-elf-objdump -d $(OUT)
@@ -77,25 +89,25 @@ run-vicuna:
 	make -f $(VICUNA_PATH)/sw/Makefile PROG=$(SRC_BASENAME) OBJ=$(OUT)\
 		VPROC_CONFIG=$(VPROC_CONFIG) VPORT_POLICY=$(VPORT_POLICY) \
 		VREG_W=$(VREG_W) VMEM_W=$(VMEM_W) TARGET_TECH=$(TARGET_TECH) \
-		PROJ_DIR=$(VICUNA_PROJ_PATH)$(PROJ) CORE=$(CORE)
+		PROJ_DIR=$(FULL_PROJ_DIR) CORE=$(CORE)
 
 sim-vicuna:
 	@$(MAKE) check_proj_dir
-	@mkdir -p $(VICUNA_PROJ_PATH)$(PROJ)/sim
+	@mkdir -p $(FULL_PROJ_DIR)/sim
 	echo "$(SRC_BASENAME).vmem" > progs.txt
 	make -f $(VICUNA_PATH)/sim/Makefile PROGS_PATH=progs.txt \
 		VPROC_CONFIG=$(VPROC_CONFIG) VPORT_POLICY=$(VPORT_POLICY) \
 		VREG_W=$(VREG_W) VMEM_W=$(VMEM_W) TARGET_TECH=$(TARGET_TECH) \
-		PROJ_DIR=$(VICUNA_PROJ_PATH)$(PROJ)/sim CORE=$(CORE)
+		PROJ_DIR=$(FULL_PROJ_DIR)/sim CORE=$(CORE)
 
 synth-vicuna:
 	@$(MAKE) check_proj_dir
-	@mkdir -p $(VICUNA_PROJ_PATH)$(PROJ)/synth
+	@mkdir -p $(FULL_PROJ_DIR)/synth
 	cd $(VICUNA_PATH)/demo && \
-	make RAM_FILE=$(VICUNA_PROJ_PATH)$(PROJ)/$(SRC_BASENAME).vmem BOARD=$(BOARD)\
+	make RAM_FILE=$(FULL_PROJ_DIR)/$(SRC_BASENAME).vmem BOARD=$(BOARD)\
 		VPROC_CONFIG=$(VPROC_CONFIG) VPORT_POLICY=$(VPORT_POLICY) \
 		VREG_W=$(VREG_W) VMEM_W=$(VMEM_W) TARGET_TECH=$(TARGET_TECH) \
-		PROJ_DIR=$(VICUNA_PROJ_PATH)$(PROJ)/synth CORE=$(CORE)
+		PROJ_DIR=$(FULL_PROJ_DIR)/synth CORE=$(CORE)
 
 clean-obj:
 	rm -f $(OUT)
@@ -118,7 +130,7 @@ tmp_debug:
 	@echo "VICUNA_PATH: $(VICUNA_PATH)"
 	@echo "VICUNA_PROJ_PATH: $(VICUNA_PATH)"
 	@echo "PROJ: $(PROJ)"
-	@echo "FULL_PROJ_DIR: $(VICUNA_PROJ_PATH)$(PROJ)"
+	@echo "FULL_PROJ_DIR: $(FULL_PROJ_DIR)"
 	@echo "VPROC_CONFIG: $(VPROC_CONFIG)"
 	@echo "VPORT_POLICY: $(VPORT_POLICY)"
 	@echo "VREG_W: $(VREG_W)"
