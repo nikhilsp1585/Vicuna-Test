@@ -2,7 +2,7 @@ FLAGS = -march=rv32imv -mabi=ilp32
 CC = riscv32-unknown-elf-gcc
 AS = riscv32-unknown-elf-as
 
-SRC ?= vector_load_asm.c
+SRC ?= vle32_32.s
 SRC_BASENAME = $(basename $(SRC))
 
 OUT ?= $(SRC_BASENAME).o
@@ -11,8 +11,8 @@ RISCV_PATH ?= /opt/riscv32
 VICUNA_PATH ?= ~/vicuna-build/vicuna
 VICUNA_PROJ_PATH ?= ~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/
 PROJ ?=  
-ifneq $(PROJ)
-	FULL_PROJ_DIR = $(FULL_PROJ_DIR)
+ifneq ($(PROJ),)
+	FULL_PROJ_DIR = $(VICUNA_PROJ_PATH)$(PROJ)
 endif
 
 CORE ?= ibex
@@ -108,17 +108,17 @@ synth-vicuna:
 		VPROC_CONFIG=$(VPROC_CONFIG) VPORT_POLICY=$(VPORT_POLICY) \
 		VREG_W=$(VREG_W) VMEM_W=$(VMEM_W) TARGET_TECH=$(TARGET_TECH) \
 		PROJ_DIR=$(FULL_PROJ_DIR)/synth CORE=$(CORE)
-
-clean-obj:
+	cp $(VICUNA_PROJ_PATH)/demo_tb_behav.wcfg $(FULL_PROJ_DIR)/synth/vicuna_demo
+clean-obj:check_proj_dir
 	rm -f $(OUT)
 
-clean-vicuna-run:
+clean-vicuna-run: check_proj_dir
 	rm -f $(SRC_BASENAME).o  $(SRC_BASENAME).elf $(SRC_BASENAME).vmem 
 
-clean-sim:
+clean-sim: check_proj_dir
 	rm -rf $(FULL_PROJ_DIR)/sim/*
 
-clean-synth:
+clean-synth: check_proj_dir
 	rm -rf $(FULL_PROJ_DIR)/synth/*
 
 tmp_debug:
