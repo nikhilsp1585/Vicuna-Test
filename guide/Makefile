@@ -10,14 +10,14 @@ ELF ?= $(SRC_BASENAME).elf
 RISCV_PATH ?= /opt/riscv32
 VICUNA_PATH ?= /home/nikhil/vicuna-build/vicuna
 VICUNA_PROJ_PATH ?= /home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/
-PROJ ?=  
+PROJ ?= /project/name 
 ifneq ($(PROJ),)
 	FULL_PROJ_DIR = $(VICUNA_PROJ_PATH)$(PROJ)
 endif
 
 TXT_TO_REPLACE = /replace/me/with/vmem/path
 VMEM_PATH = $(FULL_PROJ_DIR)/$(SRC_BASENAME).vmem
-
+WCFG_PATH = $(VICUNA_PATH)/demo_tb_behav.wcfg
 CORE ?= ibex
 VPROC_CONFIG ?= triple
 VPORT_POLICY ?= some
@@ -48,13 +48,16 @@ help:
 	@echo "\tmake clean-synth \t- Remove generated files for Vicuna synthesis"
 
 %.o:%.c
-	$(CC) -v $(FLAGS) -o $(OUT) $(SRC)
+	$(CC) -v $(FLAGS) -o $(OUT) $(SRC_BASENAME).c
 
 %.elf:%.c
-	$(CC) -v $(FLAGS) -o $(ELF) $(SRC)
+	$(CC) -v $(FLAGS) -o $(ELF) $(SRC_BASENAME).c
+	
+%.elf:%.s
+	$(CC) -v $(FLAGS) -o $(ELF) $(SRC_BASENAME).s
 
 %.o:%.s
-	$(AS) $(FLAGS) -o $(OUT) $(SRC)
+	$(AS) $(FLAGS) -o $(OUT) $(SRC_BASENAME).s
 
 set-src:
 	SRC=$(SRC) && \
@@ -111,8 +114,8 @@ synth-vicuna:
 		VPROC_CONFIG=$(VPROC_CONFIG) VPORT_POLICY=$(VPORT_POLICY) \
 		VREG_W=$(VREG_W) VMEM_W=$(VMEM_W) TARGET_TECH=$(TARGET_TECH) \
 		PROJ_DIR=$(FULL_PROJ_DIR)/synth CORE=$(CORE)
-	cp $(VICUNA_PROJ_PATH)/demo_tb_behav.wcfg $(FULL_PROJ_DIR)/synth/vicuna_demo/
-	sed "s|$(TXT_TO_REPLACE)|$(VMEM_PATH)|g" $(FULL_PROJ_DIR)/synth/vicuna_demo/demo_tb_behav.wcfg
+	# cp $(VICUNA_PROJ_PATH)/demo_tb_behav.wcfg $(FULL_PROJ_DIR)/synth/vicuna_demo/
+	sed "s|$(TXT_TO_REPLACE)|$(VMEM_PATH)|g" $(WCGP_PATH) > $(FULL_PROJ_DIR)/synth/vicuna_demo/demo_tb_behav.wcfg
 
 clean-obj:check_proj_dir
 	rm -f $(OUT)
@@ -137,6 +140,7 @@ tmp_debug:
 	@echo "PROJ: $(PROJ)"
 	@echo "FULL_PROJ_DIR: $(FULL_PROJ_DIR)"
 	@echo "VMEM_PATH: $(VMEM_PATH)"
+	@echo "WCFG_PATH: $(WCFG_PATH)"
 	@echo "CORE: $(CORE)"
 	@echo "BOARD: $(BOARD)"
 	@echo "VPROC_CONFIG: $(VPROC_CONFIG)"

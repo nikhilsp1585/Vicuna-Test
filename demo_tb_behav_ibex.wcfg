@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="demo_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) " />
+            <top_module name="glbl" />
+            <top_module name="ibex_pkg" />
+            <top_module name="prim_ram_1p_pkg" />
+            <top_module name="vproc_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,398.100 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,525.101 ns"></ZoomEndTime>
+      <Cursor1Time time="2,339.100 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="238"></NameColumnWidth>
+      <ValueColumnWidth column_width="229"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="42" />
+   <wave_markers>
+      <marker label="" time="1595000" />
+      <marker label="" time="1655000" />
+      <marker label="" time="1975000" />
+      <marker label="" time="2175000" />
+      <marker label="" time="1675000" />
+      <marker label="" time="2055000" />
+      <marker label="" time="1695000" />
+      <marker label="" time="2315000" />
+   </wave_markers>
+   <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider12" type="divider">
+      <obj_property name="label">u_core (ibex)</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#A52A2A</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group19">
+      <obj_property name="label">cpi_instr_signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/u_core/instr_addr_o">
+         <obj_property name="ElementShortName">instr_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/cpi_instr_valid">
+         <obj_property name="ElementShortName">cpi_instr_valid</obj_property>
+         <obj_property name="ObjectShortName">cpi_instr_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/cpi_instr">
+         <obj_property name="ElementShortName">cpi_instr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">cpi_instr[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/cpi_x_rs1">
+         <obj_property name="ElementShortName">cpi_x_rs1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">cpi_x_rs1[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/cpi_x_rs2">
+         <obj_property name="ElementShortName">cpi_x_rs2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">cpi_x_rs2[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/cpi_instr_illegal">
+         <obj_property name="ElementShortName">cpi_instr_illegal</obj_property>
+         <obj_property name="ObjectShortName">cpi_instr_illegal</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/u_core/u_ibex_core/id_stage_i/stall_cpi">
+         <obj_property name="ElementShortName">stall_cpi</obj_property>
+         <obj_property name="ObjectShortName">stall_cpi</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/u_core/u_ibex_core/id_stage_i/cpi_done">
+         <obj_property name="ElementShortName">cpi_done</obj_property>
+         <obj_property name="ObjectShortName">cpi_done</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="group244">
+         <obj_property name="label">ibex_regfile</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/u_core/\gen_regfile_ff.register_file_i /rdata_a_o">
+            <obj_property name="ElementShortName">rdata_a_o[31:0]</obj_property>
+            <obj_property name="ObjectShortName">rdata_a_o[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/u_core/\gen_regfile_ff.register_file_i /raddr_b_i">
+            <obj_property name="ElementShortName">raddr_b_i[4:0]</obj_property>
+            <obj_property name="ObjectShortName">raddr_b_i[4:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/u_core/\gen_regfile_ff.register_file_i /rdata_b_o">
+            <obj_property name="ElementShortName">rdata_b_o[31:0]</obj_property>
+            <obj_property name="ObjectShortName">rdata_b_o[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/u_core/\gen_regfile_ff.register_file_i /waddr_a_i">
+            <obj_property name="ElementShortName">waddr_a_i[4:0]</obj_property>
+            <obj_property name="ObjectShortName">waddr_a_i[4:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/u_core/\gen_regfile_ff.register_file_i /wdata_a_i">
+            <obj_property name="ElementShortName">wdata_a_i[31:0]</obj_property>
+            <obj_property name="ObjectShortName">wdata_a_i[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/u_core/\gen_regfile_ff.register_file_i /we_a_i">
+            <obj_property name="ElementShortName">we_a_i</obj_property>
+            <obj_property name="ObjectShortName">we_a_i</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/u_core/\gen_regfile_ff.register_file_i /rf_reg">
+            <obj_property name="ElementShortName">rf_reg[31:0][31:0]</obj_property>
+            <obj_property name="ObjectShortName">rf_reg[31:0][31:0]</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/u_core/\gen_regfile_ff.register_file_i /rf_reg_q">
+            <obj_property name="ElementShortName">rf_reg_q[31:1][31:0]</obj_property>
+            <obj_property name="ObjectShortName">rf_reg_q[31:1][31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/u_core/\gen_regfile_ff.register_file_i /we_a_dec">
+            <obj_property name="ElementShortName">we_a_dec[31:1]</obj_property>
+            <obj_property name="ObjectShortName">we_a_dec[31:1]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider13" type="divider">
+      <obj_property name="label">v_core (vicuna)</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/cfg_valid">
+      <obj_property name="ElementShortName">cfg_valid</obj_property>
+      <obj_property name="ObjectShortName">cfg_valid</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group36">
+      <obj_property name="label">*_q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vsew_q">
+         <obj_property name="ElementShortName">vsew_q[1:0]</obj_property>
+         <obj_property name="ObjectShortName">vsew_q[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/lmul_q">
+         <obj_property name="ElementShortName">lmul_q[2:0]</obj_property>
+         <obj_property name="ObjectShortName">lmul_q[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vl_q">
+         <obj_property name="ElementShortName">vl_q[6:0]</obj_property>
+         <obj_property name="ObjectShortName">vl_q[6:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vl_csr_q">
+         <obj_property name="ElementShortName">vl_csr_q[7:0]</obj_property>
+         <obj_property name="ObjectShortName">vl_csr_q[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vstart_q">
+         <obj_property name="ElementShortName">vstart_q[6:0]</obj_property>
+         <obj_property name="ObjectShortName">vstart_q[6:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vxrm_q">
+         <obj_property name="ElementShortName">vxrm_q[1:0]</obj_property>
+         <obj_property name="ObjectShortName">vxrm_q[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vxsat_q">
+         <obj_property name="ElementShortName">vxsat_q</obj_property>
+         <obj_property name="ObjectShortName">vxsat_q</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec_data_q">
+         <obj_property name="ElementShortName">dec_data_q</obj_property>
+         <obj_property name="ObjectShortName">dec_data_q</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group46">
+      <obj_property name="label">*_d</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vsew_d">
+         <obj_property name="ElementShortName">vsew_d[1:0]</obj_property>
+         <obj_property name="ObjectShortName">vsew_d[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/lmul_d">
+         <obj_property name="ElementShortName">lmul_d[2:0]</obj_property>
+         <obj_property name="ObjectShortName">lmul_d[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vl_d">
+         <obj_property name="ElementShortName">vl_d[6:0]</obj_property>
+         <obj_property name="ObjectShortName">vl_d[6:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vl_csr_d">
+         <obj_property name="ElementShortName">vl_csr_d[7:0]</obj_property>
+         <obj_property name="ObjectShortName">vl_csr_d[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vstart_d">
+         <obj_property name="ElementShortName">vstart_d[6:0]</obj_property>
+         <obj_property name="ObjectShortName">vstart_d[6:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vxrm_d">
+         <obj_property name="ElementShortName">vxrm_d[1:0]</obj_property>
+         <obj_property name="ObjectShortName">vxrm_d[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vl_d">
+         <obj_property name="ElementShortName">vl_d[6:0]</obj_property>
+         <obj_property name="ObjectShortName">vl_d[6:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec_data_d">
+         <obj_property name="ElementShortName">dec_data_d</obj_property>
+         <obj_property name="ObjectShortName">dec_data_d</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vxsat_d">
+         <obj_property name="ElementShortName">vxsat_d</obj_property>
+         <obj_property name="ObjectShortName">vxsat_d</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group35">
+      <obj_property name="label">csr_*_o</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/csr_vtype_o">
+         <obj_property name="ElementShortName">csr_vtype_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_vtype_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/csr_vl_o">
+         <obj_property name="ElementShortName">csr_vl_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_vl_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/csr_vlenb_o">
+         <obj_property name="ElementShortName">csr_vlenb_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_vlenb_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/csr_vstart_o">
+         <obj_property name="ElementShortName">csr_vstart_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_vstart_o[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/instr_valid">
+      <obj_property name="ElementShortName">instr_valid</obj_property>
+      <obj_property name="ObjectShortName">instr_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/instr_offload">
+      <obj_property name="ElementShortName">instr_offload</obj_property>
+      <obj_property name="ObjectShortName">instr_offload</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/instr_mode">
+      <obj_property name="ElementShortName">instr_mode</obj_property>
+      <obj_property name="ObjectShortName">instr_mode</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/instr_unit">
+      <obj_property name="ElementShortName">instr_unit[2:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_unit[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/instr_valid">
+      <obj_property name="ElementShortName">instr_valid</obj_property>
+      <obj_property name="ObjectShortName">instr_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/issue_id_used">
+      <obj_property name="ElementShortName">issue_id_used</obj_property>
+      <obj_property name="ObjectShortName">issue_id_used</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/instr_complete_valid">
+      <obj_property name="ElementShortName">instr_complete_valid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_complete_valid[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/instr_complete_id">
+      <obj_property name="ElementShortName">instr_complete_id[2:0][2:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_complete_id[2:0][2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/instr_state_d">
+      <obj_property name="ElementShortName">instr_state_d[7:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_state_d[7:0][1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/instr_state_q">
+      <obj_property name="ElementShortName">instr_state_q[7:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_state_q[7:0][1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/pending_load_o">
+      <obj_property name="ElementShortName">pending_load_o</obj_property>
+      <obj_property name="ObjectShortName">pending_load_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/pending_store_o">
+      <obj_property name="ElementShortName">pending_store_o</obj_property>
+      <obj_property name="ObjectShortName">pending_store_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/pipe_instr_valid">
+      <obj_property name="ElementShortName">pipe_instr_valid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pipe_instr_valid[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/pipe_instr_ready">
+      <obj_property name="ElementShortName">pipe_instr_ready[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pipe_instr_ready[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/pipe_instr_data">
+      <obj_property name="ElementShortName">pipe_instr_data</obj_property>
+      <obj_property name="ObjectShortName">pipe_instr_data</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group76">
+      <obj_property name="label">pipe_xif_0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe_xif /issue_valid">
+         <obj_property name="ElementShortName">issue_valid</obj_property>
+         <obj_property name="ObjectShortName">issue_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe_xif /issue_ready">
+         <obj_property name="ElementShortName">issue_ready</obj_property>
+         <obj_property name="ObjectShortName">issue_ready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe_xif /issue_req">
+         <obj_property name="ElementShortName">issue_req</obj_property>
+         <obj_property name="ObjectShortName">issue_req</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe_xif /issue_resp">
+         <obj_property name="ElementShortName">issue_resp</obj_property>
+         <obj_property name="ObjectShortName">issue_resp</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe_xif /commit_valid">
+         <obj_property name="ElementShortName">commit_valid</obj_property>
+         <obj_property name="ObjectShortName">commit_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe_xif /commit">
+         <obj_property name="ElementShortName">commit</obj_property>
+         <obj_property name="ObjectShortName">commit</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe_xif /mem_valid">
+         <obj_property name="ElementShortName">mem_valid</obj_property>
+         <obj_property name="ObjectShortName">mem_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe_xif /mem_ready">
+         <obj_property name="ElementShortName">mem_ready</obj_property>
+         <obj_property name="ObjectShortName">mem_ready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe_xif /mem_req">
+         <obj_property name="ElementShortName">mem_req</obj_property>
+         <obj_property name="ObjectShortName">mem_req</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe_xif /mem_resp">
+         <obj_property name="ElementShortName">mem_resp</obj_property>
+         <obj_property name="ObjectShortName">mem_resp</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe_xif /mem_result_valid">
+         <obj_property name="ElementShortName">mem_result_valid</obj_property>
+         <obj_property name="ObjectShortName">mem_result_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe_xif /mem_result">
+         <obj_property name="ElementShortName">mem_result</obj_property>
+         <obj_property name="ObjectShortName">mem_result</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe_xif /result_valid">
+         <obj_property name="ElementShortName">result_valid</obj_property>
+         <obj_property name="ObjectShortName">result_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe_xif /result_ready">
+         <obj_property name="ElementShortName">result_ready</obj_property>
+         <obj_property name="ObjectShortName">result_ready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe_xif /result">
+         <obj_property name="ElementShortName">result</obj_property>
+         <obj_property name="ObjectShortName">result</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group98">
+      <obj_property name="label">pipe_xif_1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[1].pipe_xif /issue_valid">
+         <obj_property name="ElementShortName">issue_valid</obj_property>
+         <obj_property name="ObjectShortName">issue_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[1].pipe_xif /issue_ready">
+         <obj_property name="ElementShortName">issue_ready</obj_property>
+         <obj_property name="ObjectShortName">issue_ready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[1].pipe_xif /issue_req">
+         <obj_property name="ElementShortName">issue_req</obj_property>
+         <obj_property name="ObjectShortName">issue_req</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[1].pipe_xif /issue_resp">
+         <obj_property name="ElementShortName">issue_resp</obj_property>
+         <obj_property name="ObjectShortName">issue_resp</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[1].pipe_xif /commit_valid">
+         <obj_property name="ElementShortName">commit_valid</obj_property>
+         <obj_property name="ObjectShortName">commit_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[1].pipe_xif /commit">
+         <obj_property name="ElementShortName">commit</obj_property>
+         <obj_property name="ObjectShortName">commit</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[1].pipe_xif /mem_valid">
+         <obj_property name="ElementShortName">mem_valid</obj_property>
+         <obj_property name="ObjectShortName">mem_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[1].pipe_xif /mem_ready">
+         <obj_property name="ElementShortName">mem_ready</obj_property>
+         <obj_property name="ObjectShortName">mem_ready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[1].pipe_xif /mem_req">
+         <obj_property name="ElementShortName">mem_req</obj_property>
+         <obj_property name="ObjectShortName">mem_req</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[1].pipe_xif /mem_resp">
+         <obj_property name="ElementShortName">mem_resp</obj_property>
+         <obj_property name="ObjectShortName">mem_resp</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[1].pipe_xif /mem_result_valid">
+         <obj_property name="ElementShortName">mem_result_valid</obj_property>
+         <obj_property name="ObjectShortName">mem_result_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[1].pipe_xif /mem_result">
+         <obj_property name="ElementShortName">mem_result</obj_property>
+         <obj_property name="ObjectShortName">mem_result</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[1].pipe_xif /result_valid">
+         <obj_property name="ElementShortName">result_valid</obj_property>
+         <obj_property name="ObjectShortName">result_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[1].pipe_xif /result_ready">
+         <obj_property name="ElementShortName">result_ready</obj_property>
+         <obj_property name="ObjectShortName">result_ready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[1].pipe_xif /result">
+         <obj_property name="ElementShortName">result</obj_property>
+         <obj_property name="ObjectShortName">result</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group120">
+      <obj_property name="label">pipe_xif_2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[2].pipe_xif /issue_valid">
+         <obj_property name="ElementShortName">issue_valid</obj_property>
+         <obj_property name="ObjectShortName">issue_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[2].pipe_xif /issue_ready">
+         <obj_property name="ElementShortName">issue_ready</obj_property>
+         <obj_property name="ObjectShortName">issue_ready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[2].pipe_xif /issue_req">
+         <obj_property name="ElementShortName">issue_req</obj_property>
+         <obj_property name="ObjectShortName">issue_req</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[2].pipe_xif /issue_resp">
+         <obj_property name="ElementShortName">issue_resp</obj_property>
+         <obj_property name="ObjectShortName">issue_resp</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[2].pipe_xif /commit_valid">
+         <obj_property name="ElementShortName">commit_valid</obj_property>
+         <obj_property name="ObjectShortName">commit_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[2].pipe_xif /commit">
+         <obj_property name="ElementShortName">commit</obj_property>
+         <obj_property name="ObjectShortName">commit</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[2].pipe_xif /mem_valid">
+         <obj_property name="ElementShortName">mem_valid</obj_property>
+         <obj_property name="ObjectShortName">mem_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[2].pipe_xif /mem_ready">
+         <obj_property name="ElementShortName">mem_ready</obj_property>
+         <obj_property name="ObjectShortName">mem_ready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[2].pipe_xif /mem_req">
+         <obj_property name="ElementShortName">mem_req</obj_property>
+         <obj_property name="ObjectShortName">mem_req</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[2].pipe_xif /mem_resp">
+         <obj_property name="ElementShortName">mem_resp</obj_property>
+         <obj_property name="ObjectShortName">mem_resp</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[2].pipe_xif /mem_result_valid">
+         <obj_property name="ElementShortName">mem_result_valid</obj_property>
+         <obj_property name="ObjectShortName">mem_result_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[2].pipe_xif /mem_result">
+         <obj_property name="ElementShortName">mem_result</obj_property>
+         <obj_property name="ObjectShortName">mem_result</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[2].pipe_xif /result_valid">
+         <obj_property name="ElementShortName">result_valid</obj_property>
+         <obj_property name="ObjectShortName">result_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[2].pipe_xif /result_ready">
+         <obj_property name="ElementShortName">result_ready</obj_property>
+         <obj_property name="ObjectShortName">result_ready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[2].pipe_xif /result">
+         <obj_property name="ElementShortName">result</obj_property>
+         <obj_property name="ObjectShortName">result</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group664">
+      <obj_property name="label">pipe0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /pipe_in_valid_i">
+         <obj_property name="ElementShortName">pipe_in_valid_i</obj_property>
+         <obj_property name="ObjectShortName">pipe_in_valid_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /pipe_in_ready_o">
+         <obj_property name="ElementShortName">pipe_in_ready_o</obj_property>
+         <obj_property name="ObjectShortName">pipe_in_ready_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /pipe_in_data_i">
+         <obj_property name="ElementShortName">pipe_in_data_i</obj_property>
+         <obj_property name="ObjectShortName">pipe_in_data_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /vreg_pend_wr_i">
+         <obj_property name="ElementShortName">vreg_pend_wr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_pend_wr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /vreg_pend_rd_o">
+         <obj_property name="ElementShortName">vreg_pend_rd_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_pend_rd_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /vreg_pend_rd_i">
+         <obj_property name="ElementShortName">vreg_pend_rd_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_pend_rd_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /instr_state_i">
+         <obj_property name="ElementShortName">instr_state_i[7:0][1:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_state_i[7:0][1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /instr_done_valid_o">
+         <obj_property name="ElementShortName">instr_done_valid_o</obj_property>
+         <obj_property name="ObjectShortName">instr_done_valid_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /instr_done_id_o">
+         <obj_property name="ElementShortName">instr_done_id_o[2:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_done_id_o[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /vreg_rd_addr_o">
+         <obj_property name="ElementShortName">vreg_rd_addr_o[0:0][4:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_rd_addr_o[0:0][4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /vreg_rd_data_i">
+         <obj_property name="ElementShortName">vreg_rd_data_i[0:0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_rd_data_i[0:0][127:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /vreg_rd_v0_i">
+         <obj_property name="ElementShortName">vreg_rd_v0_i[127:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_rd_v0_i[127:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /vreg_wr_valid_o">
+         <obj_property name="ElementShortName">vreg_wr_valid_o</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_valid_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /vreg_wr_ready_i">
+         <obj_property name="ElementShortName">vreg_wr_ready_i</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_ready_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /vreg_wr_addr_o">
+         <obj_property name="ElementShortName">vreg_wr_addr_o[4:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_addr_o[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /vreg_wr_be_o">
+         <obj_property name="ElementShortName">vreg_wr_be_o[15:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_be_o[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /vreg_wr_data_o">
+         <obj_property name="ElementShortName">vreg_wr_data_o[127:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_data_o[127:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /vreg_wr_clr_o">
+         <obj_property name="ElementShortName">vreg_wr_clr_o</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_clr_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /vreg_wr_clr_cnt_o">
+         <obj_property name="ElementShortName">vreg_wr_clr_cnt_o[1:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_clr_cnt_o[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /pending_load_o">
+         <obj_property name="ElementShortName">pending_load_o</obj_property>
+         <obj_property name="ObjectShortName">pending_load_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /pending_store_o">
+         <obj_property name="ElementShortName">pending_store_o</obj_property>
+         <obj_property name="ObjectShortName">pending_store_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /trans_complete_valid_o">
+         <obj_property name="ElementShortName">trans_complete_valid_o</obj_property>
+         <obj_property name="ObjectShortName">trans_complete_valid_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /trans_complete_ready_i">
+         <obj_property name="ElementShortName">trans_complete_ready_i</obj_property>
+         <obj_property name="ObjectShortName">trans_complete_ready_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /trans_complete_id_o">
+         <obj_property name="ElementShortName">trans_complete_id_o[2:0]</obj_property>
+         <obj_property name="ObjectShortName">trans_complete_id_o[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /trans_complete_exc_o">
+         <obj_property name="ElementShortName">trans_complete_exc_o</obj_property>
+         <obj_property name="ObjectShortName">trans_complete_exc_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /trans_complete_exccode_o">
+         <obj_property name="ElementShortName">trans_complete_exccode_o[5:0]</obj_property>
+         <obj_property name="ObjectShortName">trans_complete_exccode_o[5:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /xreg_valid_o">
+         <obj_property name="ElementShortName">xreg_valid_o</obj_property>
+         <obj_property name="ObjectShortName">xreg_valid_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /xreg_ready_i">
+         <obj_property name="ElementShortName">xreg_ready_i</obj_property>
+         <obj_property name="ObjectShortName">xreg_ready_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /xreg_id_o">
+         <obj_property name="ElementShortName">xreg_id_o[2:0]</obj_property>
+         <obj_property name="ObjectShortName">xreg_id_o[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /xreg_addr_o">
+         <obj_property name="ElementShortName">xreg_addr_o[4:0]</obj_property>
+         <obj_property name="ObjectShortName">xreg_addr_o[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /xreg_data_o">
+         <obj_property name="ElementShortName">xreg_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">xreg_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /unit_lsu">
+         <obj_property name="ElementShortName">unit_lsu</obj_property>
+         <obj_property name="ObjectShortName">unit_lsu</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /unit_alu">
+         <obj_property name="ElementShortName">unit_alu</obj_property>
+         <obj_property name="ObjectShortName">unit_alu</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /unit_mul">
+         <obj_property name="ElementShortName">unit_mul</obj_property>
+         <obj_property name="ObjectShortName">unit_mul</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /unit_sld">
+         <obj_property name="ElementShortName">unit_sld</obj_property>
+         <obj_property name="ObjectShortName">unit_sld</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /unit_elem">
+         <obj_property name="ElementShortName">unit_elem</obj_property>
+         <obj_property name="ObjectShortName">unit_elem</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /elem_flush">
+         <obj_property name="ElementShortName">elem_flush</obj_property>
+         <obj_property name="ObjectShortName">elem_flush</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /elem_vs2_data">
+         <obj_property name="ElementShortName">elem_vs2_data</obj_property>
+         <obj_property name="ObjectShortName">elem_vs2_data</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /elem_vs2_mask">
+         <obj_property name="ElementShortName">elem_vs2_mask</obj_property>
+         <obj_property name="ObjectShortName">elem_vs2_mask</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /elem_vs2_dyn_addr">
+         <obj_property name="ElementShortName">elem_vs2_dyn_addr</obj_property>
+         <obj_property name="ObjectShortName">elem_vs2_dyn_addr</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk9[0].pipe /state_init">
+         <obj_property name="ElementShortName">state_init</obj_property>
+         <obj_property name="ObjectShortName">state_init</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group133">
+      <obj_property name="label">dec</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec/instr_valid_i">
+         <obj_property name="ElementShortName">instr_valid_i</obj_property>
+         <obj_property name="ObjectShortName">instr_valid_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec/instr_i">
+         <obj_property name="ElementShortName">instr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec/x_rs1_i">
+         <obj_property name="ElementShortName">x_rs1_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">x_rs1_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec/x_rs2_i">
+         <obj_property name="ElementShortName">x_rs2_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">x_rs2_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec/vsew_i">
+         <obj_property name="ElementShortName">vsew_i[1:0]</obj_property>
+         <obj_property name="ObjectShortName">vsew_i[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec/lmul_i">
+         <obj_property name="ElementShortName">lmul_i[2:0]</obj_property>
+         <obj_property name="ObjectShortName">lmul_i[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec/vxrm_i">
+         <obj_property name="ElementShortName">vxrm_i[1:0]</obj_property>
+         <obj_property name="ObjectShortName">vxrm_i[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec/vl_i">
+         <obj_property name="ElementShortName">vl_i[6:0]</obj_property>
+         <obj_property name="ObjectShortName">vl_i[6:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec/instr_vs1">
+         <obj_property name="ElementShortName">instr_vs1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_vs1[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec/instr_vs2">
+         <obj_property name="ElementShortName">instr_vs2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_vs2[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec/instr_vd">
+         <obj_property name="ElementShortName">instr_vd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_vd[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec/emul">
+         <obj_property name="ElementShortName">emul[1:0]</obj_property>
+         <obj_property name="ObjectShortName">emul[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec/instr_masked">
+         <obj_property name="ElementShortName">instr_masked</obj_property>
+         <obj_property name="ObjectShortName">instr_masked</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dec/instr_illegal">
+         <obj_property name="ElementShortName">instr_illegal</obj_property>
+         <obj_property name="ObjectShortName">instr_illegal</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group166">
+      <obj_property name="label">instr_queue</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk6.instr_queue /enq_ready_o">
+         <obj_property name="ElementShortName">enq_ready_o</obj_property>
+         <obj_property name="ObjectShortName">enq_ready_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk6.instr_queue /enq_valid_i">
+         <obj_property name="ElementShortName">enq_valid_i</obj_property>
+         <obj_property name="ObjectShortName">enq_valid_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk6.instr_queue /enq_data_i">
+         <obj_property name="ElementShortName">enq_data_i[120:0]</obj_property>
+         <obj_property name="ObjectShortName">enq_data_i[120:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk6.instr_queue /deq_ready_i">
+         <obj_property name="ElementShortName">deq_ready_i</obj_property>
+         <obj_property name="ObjectShortName">deq_ready_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk6.instr_queue /deq_valid_o">
+         <obj_property name="ElementShortName">deq_valid_o</obj_property>
+         <obj_property name="ObjectShortName">deq_valid_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk6.instr_queue /deq_data_o">
+         <obj_property name="ElementShortName">deq_data_o[120:0]</obj_property>
+         <obj_property name="ObjectShortName">deq_data_o[120:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/\genblk6.instr_queue /data">
+         <obj_property name="ElementShortName">data[0:1][120:0]</obj_property>
+         <obj_property name="ObjectShortName">data[0:1][120:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group158">
+      <obj_property name="label">dispatcher</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dispatcher/instr_valid_i">
+         <obj_property name="ElementShortName">instr_valid_i</obj_property>
+         <obj_property name="ObjectShortName">instr_valid_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dispatcher/instr_ready_o">
+         <obj_property name="ElementShortName">instr_ready_o</obj_property>
+         <obj_property name="ObjectShortName">instr_ready_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dispatcher/instr_data_i">
+         <obj_property name="ElementShortName">instr_data_i</obj_property>
+         <obj_property name="ObjectShortName">instr_data_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dispatcher/instr_vreg_wr_i">
+         <obj_property name="ElementShortName">instr_vreg_wr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_vreg_wr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dispatcher/dispatch_valid_o">
+         <obj_property name="ElementShortName">dispatch_valid_o[2:0]</obj_property>
+         <obj_property name="ObjectShortName">dispatch_valid_o[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dispatcher/dispatch_ready_i">
+         <obj_property name="ElementShortName">dispatch_ready_i[2:0]</obj_property>
+         <obj_property name="ObjectShortName">dispatch_ready_i[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/dispatcher/dispatch_data_o">
+         <obj_property name="ElementShortName">dispatch_data_o</obj_property>
+         <obj_property name="ObjectShortName">dispatch_data_o</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group138">
+      <obj_property name="label">vregfile</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vregfile/rd_data">
+         <obj_property name="ElementShortName">rd_data[5:0][1:0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_data[5:0][1:0][127:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vregfile/\genblk1[0].wr_data ">
+         <obj_property name="ElementShortName">\genblk1[0].wr_data [127:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[0].wr_data [127:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vregfile/wr_addr_i">
+         <obj_property name="ElementShortName">wr_addr_i[1:0][4:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_addr_i[1:0][4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vregfile/wr_be_i">
+         <obj_property name="ElementShortName">wr_be_i[1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_be_i[1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vregfile/wr_we_i">
+         <obj_property name="ElementShortName">wr_we_i[1:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_we_i[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vregfile/wr_data_i">
+         <obj_property name="ElementShortName">wr_data_i[1:0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_data_i[1:0][127:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vregfile/rd_addr_i">
+         <obj_property name="ElementShortName">rd_addr_i[4:0][4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_addr_i[4:0][4:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vregfile/ram_asic">
+         <obj_property name="ElementShortName">ram_asic[31:0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_asic[31:0][127:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vregfile/rd_addr">
+         <obj_property name="ElementShortName">rd_addr[5:0][1:0][4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_addr[5:0][1:0][4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vregfile/rd_data">
+         <obj_property name="ElementShortName">rd_data[5:0][1:0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_data[5:0][1:0][127:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group496">
+      <obj_property name="label">vreg_wr_mux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vreg_wr_valid_i">
+         <obj_property name="ElementShortName">vreg_wr_valid_i[2:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_valid_i[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vreg_wr_ready_o">
+         <obj_property name="ElementShortName">vreg_wr_ready_o[2:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_ready_o[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vreg_wr_addr_i">
+         <obj_property name="ElementShortName">vreg_wr_addr_i[2:0][4:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_addr_i[2:0][4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vreg_wr_be_i">
+         <obj_property name="ElementShortName">vreg_wr_be_i[2:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_be_i[2:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vreg_wr_data_i">
+         <obj_property name="ElementShortName">vreg_wr_data_i[2:0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_data_i[2:0][127:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vreg_wr_clr_i">
+         <obj_property name="ElementShortName">vreg_wr_clr_i[2:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_clr_i[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vreg_wr_clr_cnt_i">
+         <obj_property name="ElementShortName">vreg_wr_clr_cnt_i[2:0][1:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_clr_cnt_i[2:0][1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/pend_vreg_wr_clr_o">
+         <obj_property name="ElementShortName">pend_vreg_wr_clr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pend_vreg_wr_clr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vregfile_wr_en_o">
+         <obj_property name="ElementShortName">vregfile_wr_en_o[1:0]</obj_property>
+         <obj_property name="ObjectShortName">vregfile_wr_en_o[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vregfile_wr_addr_o">
+         <obj_property name="ElementShortName">vregfile_wr_addr_o[1:0][4:0]</obj_property>
+         <obj_property name="ObjectShortName">vregfile_wr_addr_o[1:0][4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vregfile_wr_be_o">
+         <obj_property name="ElementShortName">vregfile_wr_be_o[1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">vregfile_wr_be_o[1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vregfile_wr_data_o">
+         <obj_property name="ElementShortName">vregfile_wr_data_o[1:0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">vregfile_wr_data_o[1:0][127:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vreg_wr_valid">
+         <obj_property name="ElementShortName">vreg_wr_valid[2:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_valid[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vreg_wr_addr">
+         <obj_property name="ElementShortName">vreg_wr_addr[2:0][4:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_addr[2:0][4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vreg_wr_be">
+         <obj_property name="ElementShortName">vreg_wr_be[2:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_be[2:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vreg_wr_data">
+         <obj_property name="ElementShortName">vreg_wr_data[2:0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_data[2:0][127:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vreg_wr_clr">
+         <obj_property name="ElementShortName">vreg_wr_clr[2:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_clr[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/vreg_wr_clr_cnt">
+         <obj_property name="ElementShortName">vreg_wr_clr_cnt[2:0][1:0]</obj_property>
+         <obj_property name="ObjectShortName">vreg_wr_clr_cnt[2:0][1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[0].vreg_wr_valid_q ">
+         <obj_property name="ElementShortName">\genblk1[0].vreg_wr_valid_q [0:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[0].vreg_wr_valid_q [0:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[0].vreg_wr_valid_d ">
+         <obj_property name="ElementShortName">\genblk1[0].vreg_wr_valid_d </obj_property>
+         <obj_property name="ObjectShortName">\genblk1[0].vreg_wr_valid_d </obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[0].vreg_wr_addr_q ">
+         <obj_property name="ElementShortName">\genblk1[0].vreg_wr_addr_q [0:0][4:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[0].vreg_wr_addr_q [0:0][4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[0].vreg_wr_addr_d ">
+         <obj_property name="ElementShortName">\genblk1[0].vreg_wr_addr_d [4:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[0].vreg_wr_addr_d [4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[0].vreg_wr_be_q ">
+         <obj_property name="ElementShortName">\genblk1[0].vreg_wr_be_q [0:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[0].vreg_wr_be_q [0:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[0].vreg_wr_be_d ">
+         <obj_property name="ElementShortName">\genblk1[0].vreg_wr_be_d [15:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[0].vreg_wr_be_d [15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[0].vreg_wr_data_q ">
+         <obj_property name="ElementShortName">\genblk1[0].vreg_wr_data_q [0:0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[0].vreg_wr_data_q [0:0][127:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[0].vreg_wr_data_d ">
+         <obj_property name="ElementShortName">\genblk1[0].vreg_wr_data_d [127:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[0].vreg_wr_data_d [127:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[0].vreg_wr_clr_q ">
+         <obj_property name="ElementShortName">\genblk1[0].vreg_wr_clr_q [0:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[0].vreg_wr_clr_q [0:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[0].vreg_wr_clr_d ">
+         <obj_property name="ElementShortName">\genblk1[0].vreg_wr_clr_d </obj_property>
+         <obj_property name="ObjectShortName">\genblk1[0].vreg_wr_clr_d </obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[0].vreg_wr_clr_cnt_q ">
+         <obj_property name="ElementShortName">\genblk1[0].vreg_wr_clr_cnt_q [0:0][1:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[0].vreg_wr_clr_cnt_q [0:0][1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[0].vreg_wr_clr_cnt_d ">
+         <obj_property name="ElementShortName">\genblk1[0].vreg_wr_clr_cnt_d [1:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[0].vreg_wr_clr_cnt_d [1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[1].vreg_wr_valid_q ">
+         <obj_property name="ElementShortName">\genblk1[1].vreg_wr_valid_q [0:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[1].vreg_wr_valid_q [0:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[1].vreg_wr_valid_d ">
+         <obj_property name="ElementShortName">\genblk1[1].vreg_wr_valid_d </obj_property>
+         <obj_property name="ObjectShortName">\genblk1[1].vreg_wr_valid_d </obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[1].vreg_wr_addr_q ">
+         <obj_property name="ElementShortName">\genblk1[1].vreg_wr_addr_q [0:0][4:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[1].vreg_wr_addr_q [0:0][4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[1].vreg_wr_addr_d ">
+         <obj_property name="ElementShortName">\genblk1[1].vreg_wr_addr_d [4:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[1].vreg_wr_addr_d [4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[1].vreg_wr_be_q ">
+         <obj_property name="ElementShortName">\genblk1[1].vreg_wr_be_q [0:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[1].vreg_wr_be_q [0:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[1].vreg_wr_be_d ">
+         <obj_property name="ElementShortName">\genblk1[1].vreg_wr_be_d [15:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[1].vreg_wr_be_d [15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[1].vreg_wr_data_q ">
+         <obj_property name="ElementShortName">\genblk1[1].vreg_wr_data_q [0:0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[1].vreg_wr_data_q [0:0][127:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[1].vreg_wr_data_d ">
+         <obj_property name="ElementShortName">\genblk1[1].vreg_wr_data_d [127:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[1].vreg_wr_data_d [127:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[1].vreg_wr_clr_q ">
+         <obj_property name="ElementShortName">\genblk1[1].vreg_wr_clr_q [0:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[1].vreg_wr_clr_q [0:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[1].vreg_wr_clr_d ">
+         <obj_property name="ElementShortName">\genblk1[1].vreg_wr_clr_d </obj_property>
+         <obj_property name="ObjectShortName">\genblk1[1].vreg_wr_clr_d </obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[1].vreg_wr_clr_cnt_q ">
+         <obj_property name="ElementShortName">\genblk1[1].vreg_wr_clr_cnt_q [0:0][1:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[1].vreg_wr_clr_cnt_q [0:0][1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[1].vreg_wr_clr_cnt_d ">
+         <obj_property name="ElementShortName">\genblk1[1].vreg_wr_clr_cnt_d [1:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[1].vreg_wr_clr_cnt_d [1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[2].vreg_wr_valid_q ">
+         <obj_property name="ElementShortName">\genblk1[2].vreg_wr_valid_q [0:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[2].vreg_wr_valid_q [0:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[2].vreg_wr_valid_d ">
+         <obj_property name="ElementShortName">\genblk1[2].vreg_wr_valid_d </obj_property>
+         <obj_property name="ObjectShortName">\genblk1[2].vreg_wr_valid_d </obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[2].vreg_wr_addr_q ">
+         <obj_property name="ElementShortName">\genblk1[2].vreg_wr_addr_q [0:0][4:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[2].vreg_wr_addr_q [0:0][4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[2].vreg_wr_addr_d ">
+         <obj_property name="ElementShortName">\genblk1[2].vreg_wr_addr_d [4:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[2].vreg_wr_addr_d [4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[2].vreg_wr_be_q ">
+         <obj_property name="ElementShortName">\genblk1[2].vreg_wr_be_q [0:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[2].vreg_wr_be_q [0:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[2].vreg_wr_be_d ">
+         <obj_property name="ElementShortName">\genblk1[2].vreg_wr_be_d [15:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[2].vreg_wr_be_d [15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[2].vreg_wr_data_q ">
+         <obj_property name="ElementShortName">\genblk1[2].vreg_wr_data_q [0:0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[2].vreg_wr_data_q [0:0][127:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[2].vreg_wr_data_d ">
+         <obj_property name="ElementShortName">\genblk1[2].vreg_wr_data_d [127:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[2].vreg_wr_data_d [127:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[2].vreg_wr_clr_q ">
+         <obj_property name="ElementShortName">\genblk1[2].vreg_wr_clr_q [0:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[2].vreg_wr_clr_q [0:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[2].vreg_wr_clr_d ">
+         <obj_property name="ElementShortName">\genblk1[2].vreg_wr_clr_d </obj_property>
+         <obj_property name="ObjectShortName">\genblk1[2].vreg_wr_clr_d </obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[2].vreg_wr_clr_cnt_q ">
+         <obj_property name="ElementShortName">\genblk1[2].vreg_wr_clr_cnt_q [0:0][1:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[2].vreg_wr_clr_cnt_q [0:0][1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk1[2].vreg_wr_clr_cnt_d ">
+         <obj_property name="ElementShortName">\genblk1[2].vreg_wr_clr_cnt_d [1:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk1[2].vreg_wr_clr_cnt_d [1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/pipe_pend_vreg_wr_clr">
+         <obj_property name="ElementShortName">pipe_pend_vreg_wr_clr[2:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">pipe_pend_vreg_wr_clr[2:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk2[0].pend_clr ">
+         <obj_property name="ElementShortName">\genblk2[0].pend_clr </obj_property>
+         <obj_property name="ObjectShortName">\genblk2[0].pend_clr </obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk2[0].pend_clr_cnt ">
+         <obj_property name="ElementShortName">\genblk2[0].pend_clr_cnt [1:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk2[0].pend_clr_cnt [1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk2[0].pend_clr_addr ">
+         <obj_property name="ElementShortName">\genblk2[0].pend_clr_addr [4:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk2[0].pend_clr_addr [4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk2[0].pend_clr_addr_mask ">
+         <obj_property name="ElementShortName">\genblk2[0].pend_clr_addr_mask [4:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk2[0].pend_clr_addr_mask [4:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk2[1].pend_clr ">
+         <obj_property name="ElementShortName">\genblk2[1].pend_clr </obj_property>
+         <obj_property name="ObjectShortName">\genblk2[1].pend_clr </obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk2[1].pend_clr_cnt ">
+         <obj_property name="ElementShortName">\genblk2[1].pend_clr_cnt [1:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk2[1].pend_clr_cnt [1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk2[1].pend_clr_addr ">
+         <obj_property name="ElementShortName">\genblk2[1].pend_clr_addr [4:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk2[1].pend_clr_addr [4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk2[1].pend_clr_addr_mask ">
+         <obj_property name="ElementShortName">\genblk2[1].pend_clr_addr_mask [4:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk2[1].pend_clr_addr_mask [4:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk2[2].pend_clr ">
+         <obj_property name="ElementShortName">\genblk2[2].pend_clr </obj_property>
+         <obj_property name="ObjectShortName">\genblk2[2].pend_clr </obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk2[2].pend_clr_cnt ">
+         <obj_property name="ElementShortName">\genblk2[2].pend_clr_cnt [1:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk2[2].pend_clr_cnt [1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk2[2].pend_clr_addr ">
+         <obj_property name="ElementShortName">\genblk2[2].pend_clr_addr [4:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk2[2].pend_clr_addr [4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk2[2].pend_clr_addr_mask ">
+         <obj_property name="ElementShortName">\genblk2[2].pend_clr_addr_mask [4:0]</obj_property>
+         <obj_property name="ObjectShortName">\genblk2[2].pend_clr_addr_mask [4:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk2[0].VPORT_PEND_CLR_BULK ">
+         <obj_property name="ElementShortName">\genblk2[0].VPORT_PEND_CLR_BULK </obj_property>
+         <obj_property name="ObjectShortName">\genblk2[0].VPORT_PEND_CLR_BULK </obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk2[1].VPORT_PEND_CLR_BULK ">
+         <obj_property name="ElementShortName">\genblk2[1].VPORT_PEND_CLR_BULK </obj_property>
+         <obj_property name="ObjectShortName">\genblk2[1].VPORT_PEND_CLR_BULK </obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/vreg_wr_mux/\genblk2[2].VPORT_PEND_CLR_BULK ">
+         <obj_property name="ElementShortName">\genblk2[2].VPORT_PEND_CLR_BULK </obj_property>
+         <obj_property name="ObjectShortName">\genblk2[2].VPORT_PEND_CLR_BULK </obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group206">
+      <obj_property name="label">result_if</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_empty_valid_i">
+         <obj_property name="ElementShortName">result_empty_valid_i</obj_property>
+         <obj_property name="ObjectShortName">result_empty_valid_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_empty_id_i">
+         <obj_property name="ElementShortName">result_empty_id_i[2:0]</obj_property>
+         <obj_property name="ObjectShortName">result_empty_id_i[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_lsu_valid_i">
+         <obj_property name="ElementShortName">result_lsu_valid_i</obj_property>
+         <obj_property name="ObjectShortName">result_lsu_valid_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_lsu_ready_o">
+         <obj_property name="ElementShortName">result_lsu_ready_o</obj_property>
+         <obj_property name="ObjectShortName">result_lsu_ready_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_lsu_id_i">
+         <obj_property name="ElementShortName">result_lsu_id_i[2:0]</obj_property>
+         <obj_property name="ObjectShortName">result_lsu_id_i[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_lsu_exc_i">
+         <obj_property name="ElementShortName">result_lsu_exc_i</obj_property>
+         <obj_property name="ObjectShortName">result_lsu_exc_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_lsu_exccode_i">
+         <obj_property name="ElementShortName">result_lsu_exccode_i[5:0]</obj_property>
+         <obj_property name="ObjectShortName">result_lsu_exccode_i[5:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_xreg_valid_i">
+         <obj_property name="ElementShortName">result_xreg_valid_i</obj_property>
+         <obj_property name="ObjectShortName">result_xreg_valid_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_xreg_ready_o">
+         <obj_property name="ElementShortName">result_xreg_ready_o</obj_property>
+         <obj_property name="ObjectShortName">result_xreg_ready_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_xreg_id_i">
+         <obj_property name="ElementShortName">result_xreg_id_i[2:0]</obj_property>
+         <obj_property name="ObjectShortName">result_xreg_id_i[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_xreg_addr_i">
+         <obj_property name="ElementShortName">result_xreg_addr_i[4:0]</obj_property>
+         <obj_property name="ObjectShortName">result_xreg_addr_i[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_xreg_data_i">
+         <obj_property name="ElementShortName">result_xreg_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">result_xreg_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_valid_i">
+         <obj_property name="ElementShortName">result_csr_valid_i</obj_property>
+         <obj_property name="ObjectShortName">result_csr_valid_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_ready_o">
+         <obj_property name="ElementShortName">result_csr_ready_o</obj_property>
+         <obj_property name="ObjectShortName">result_csr_ready_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_id_i">
+         <obj_property name="ElementShortName">result_csr_id_i[2:0]</obj_property>
+         <obj_property name="ObjectShortName">result_csr_id_i[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_addr_i">
+         <obj_property name="ElementShortName">result_csr_addr_i[4:0]</obj_property>
+         <obj_property name="ObjectShortName">result_csr_addr_i[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_delayed_i">
+         <obj_property name="ElementShortName">result_csr_delayed_i</obj_property>
+         <obj_property name="ObjectShortName">result_csr_delayed_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_data_i">
+         <obj_property name="ElementShortName">result_csr_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">result_csr_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_data_delayed_i">
+         <obj_property name="ElementShortName">result_csr_data_delayed_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">result_csr_data_delayed_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/instr_result_empty_q">
+         <obj_property name="ElementShortName">instr_result_empty_q[7:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_result_empty_q[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/instr_result_empty_d">
+         <obj_property name="ElementShortName">instr_result_empty_d[7:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_result_empty_d[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_valid_q">
+         <obj_property name="ElementShortName">result_csr_valid_q</obj_property>
+         <obj_property name="ObjectShortName">result_csr_valid_q</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_valid_d">
+         <obj_property name="ElementShortName">result_csr_valid_d</obj_property>
+         <obj_property name="ObjectShortName">result_csr_valid_d</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_id_q">
+         <obj_property name="ElementShortName">result_csr_id_q[2:0]</obj_property>
+         <obj_property name="ObjectShortName">result_csr_id_q[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_id_d">
+         <obj_property name="ElementShortName">result_csr_id_d[2:0]</obj_property>
+         <obj_property name="ObjectShortName">result_csr_id_d[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_addr_q">
+         <obj_property name="ElementShortName">result_csr_addr_q[4:0]</obj_property>
+         <obj_property name="ObjectShortName">result_csr_addr_q[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_addr_d">
+         <obj_property name="ElementShortName">result_csr_addr_d[4:0]</obj_property>
+         <obj_property name="ObjectShortName">result_csr_addr_d[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_delayed_q">
+         <obj_property name="ElementShortName">result_csr_delayed_q</obj_property>
+         <obj_property name="ObjectShortName">result_csr_delayed_q</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_delayed_d">
+         <obj_property name="ElementShortName">result_csr_delayed_d</obj_property>
+         <obj_property name="ObjectShortName">result_csr_delayed_d</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_data_q">
+         <obj_property name="ElementShortName">result_csr_data_q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">result_csr_data_q[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_csr_data_d">
+         <obj_property name="ElementShortName">result_csr_data_d[31:0]</obj_property>
+         <obj_property name="ObjectShortName">result_csr_data_d[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_source_hold_q">
+         <obj_property name="ElementShortName">result_source_hold_q</obj_property>
+         <obj_property name="ObjectShortName">result_source_hold_q</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_source_hold_d">
+         <obj_property name="ElementShortName">result_source_hold_d</obj_property>
+         <obj_property name="ObjectShortName">result_source_hold_d</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_source_q">
+         <obj_property name="ElementShortName">result_source_q[2:0]</obj_property>
+         <obj_property name="ObjectShortName">result_source_q[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_source_d">
+         <obj_property name="ElementShortName">result_source_d[2:0]</obj_property>
+         <obj_property name="ObjectShortName">result_source_d[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_empty_id_q">
+         <obj_property name="ElementShortName">result_empty_id_q[2:0]</obj_property>
+         <obj_property name="ObjectShortName">result_empty_id_q[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_empty_id_d">
+         <obj_property name="ElementShortName">result_empty_id_d[2:0]</obj_property>
+         <obj_property name="ObjectShortName">result_empty_id_d[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_source">
+         <obj_property name="ElementShortName">result_source[2:0]</obj_property>
+         <obj_property name="ObjectShortName">result_source[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/vproc/v_core/result_if/result_empty_id">
+         <obj_property name="ElementShortName">result_empty_id[2:0]</obj_property>
+         <obj_property name="ObjectShortName">result_empty_id[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider150" type="divider">
+      <obj_property name="label">uram_signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#800080</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/u_ram/req_i">
+      <obj_property name="ElementShortName">req_i</obj_property>
+      <obj_property name="ObjectShortName">req_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/u_ram/we_i">
+      <obj_property name="ElementShortName">we_i</obj_property>
+      <obj_property name="ObjectShortName">we_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/u_ram/be_i">
+      <obj_property name="ElementShortName">be_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">be_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/u_ram/addr_i">
+      <obj_property name="ElementShortName">addr_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/u_ram/wdata_i">
+      <obj_property name="ElementShortName">wdata_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/u_ram/rvalid_o">
+      <obj_property name="ElementShortName">rvalid_o</obj_property>
+      <obj_property name="ObjectShortName">rvalid_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/\demo_tb(RAM_FPATH=&quot;/replace/me/with/vmem/path&quot;,SYSCLK_PER=10.0) /soc/u_ram/rdata_o">
+      <obj_property name="ElementShortName">rdata_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata_o[31:0]</obj_property>
+   </wvobject>
+</wave_config>
