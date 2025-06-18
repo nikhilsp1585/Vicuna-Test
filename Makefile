@@ -1,8 +1,10 @@
 PROJ ?= 
-VICUNA_MAKEFILE = $(abspath guide/Makefile)
+VICUNA_MAKEFILE := $(abspath guide/Makefile)
+TXT_TO_REPLACE := /src/file/name
+REPLACE_TXT = $(PROJ).c
 
-.PHONY: create-vicuna-test-proj check_proj_dir
-defualt: create-vicuna-test-proj
+.PHONY: default create-vicuna-test-proj check_proj_dir
+default: check_proj_dir create-vicuna-test-proj
 
 check_proj_dir:
 	if [ -z "$(PROJ)" ]; then \
@@ -15,6 +17,8 @@ create-vicuna-test-proj: check_proj_dir
 	mkdir -p $(PROJ)
 	cp $(VICUNA_MAKEFILE) $(PROJ) 
 	@echo "Vicuna test project created in $(PROJ)."
+	sed "s|$(TXT_TO_REPLACE)|$(REPLACE_TXT)|g" $(VICUNA_MAKEFILE) > $(PROJ)/Makefile
+	touch $(abspath $(PROJ))/$(REPLACE_TXT)
 	@echo "Opening the project in VS Code..."
 	code $(PROJ) || echo "VS Code is not installed or not found in PATH. Please open the project manually."
 

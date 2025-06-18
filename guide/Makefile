@@ -2,18 +2,21 @@ FLAGS = -march=rv32imv -mabi=ilp32
 CC = riscv32-unknown-elf-gcc
 AS = riscv32-unknown-elf-as
 
-SRC ?= vle32_32.s
+SRC ?= /src/file/name
 SRC_BASENAME = $(basename $(SRC))
 
 OUT ?= $(SRC_BASENAME).o
 ELF ?= $(SRC_BASENAME).elf
 RISCV_PATH ?= /opt/riscv32
-VICUNA_PATH ?= ~/vicuna-build/vicuna
-VICUNA_PROJ_PATH ?= ~/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/
+VICUNA_PATH ?= /home/nikhil/vicuna-build/vicuna
+VICUNA_PROJ_PATH ?= /home/nikhil/Nikhil/ElectronicsDev/RISC-V/Vicuna/tests/
 PROJ ?=  
 ifneq ($(PROJ),)
 	FULL_PROJ_DIR = $(VICUNA_PROJ_PATH)$(PROJ)
 endif
+
+TXT_TO_REPLACE = /replace/me/with/vmem/path
+VMEM_PATH = $(FULL_PROJ_DIR)/$(SRC_BASENAME).vmem
 
 CORE ?= ibex
 VPROC_CONFIG ?= triple
@@ -108,7 +111,9 @@ synth-vicuna:
 		VPROC_CONFIG=$(VPROC_CONFIG) VPORT_POLICY=$(VPORT_POLICY) \
 		VREG_W=$(VREG_W) VMEM_W=$(VMEM_W) TARGET_TECH=$(TARGET_TECH) \
 		PROJ_DIR=$(FULL_PROJ_DIR)/synth CORE=$(CORE)
-	cp $(VICUNA_PROJ_PATH)/demo_tb_behav.wcfg $(FULL_PROJ_DIR)/synth/vicuna_demo
+	cp $(VICUNA_PROJ_PATH)/demo_tb_behav.wcfg $(FULL_PROJ_DIR)/synth/vicuna_demo/
+	sed "s|$(TXT_TO_REPLACE)|$(VMEM_PATH)|g" $(FULL_PROJ_DIR)/synth/vicuna_demo/demo_tb_behav.wcfg
+
 clean-obj:check_proj_dir
 	rm -f $(OUT)
 
@@ -131,6 +136,9 @@ tmp_debug:
 	@echo "VICUNA_PROJ_PATH: $(VICUNA_PATH)"
 	@echo "PROJ: $(PROJ)"
 	@echo "FULL_PROJ_DIR: $(FULL_PROJ_DIR)"
+	@echo "VMEM_PATH: $(VMEM_PATH)"
+	@echo "CORE: $(CORE)"
+	@echo "BOARD: $(BOARD)"
 	@echo "VPROC_CONFIG: $(VPROC_CONFIG)"
 	@echo "VPORT_POLICY: $(VPORT_POLICY)"
 	@echo "VREG_W: $(VREG_W)"
